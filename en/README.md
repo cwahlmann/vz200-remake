@@ -3,7 +3,7 @@
 # vz200-remake
 A remake of the Dick Smith VZ200 Color Computer (Vtech 1983, Dick Smith)
 
-![Prototyp](../images/VZ200-komplett-5Zoll-Monitor-TheHunter.jpg "VZ200 - 70%")
+![Prototyp](../images/vz200-teaser.jpg "VZ200 - 70%")
 
 # whats waiting for you:
 
