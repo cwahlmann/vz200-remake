@@ -14,7 +14,7 @@ A remake of the VZ200 Color Computer (Vtech 1983, Dick Smith)
 ... a monitor with built-in TFT-display, Raspberry PI and speaker
 
 * circuit board design and .gbr files for a full functional keyboard
-* VZ200-emulator (based on'jemu': http://jemu.winape.net) with datasette-emulation und REST-interface
+* VZ200 emulator (based on 'jemu': http://jemu.winape.net) with datasette-emulation und REST-interface
 * VZ200 Companion App to control your VZ200 from remote by the REST-interface
 * list of all needed parts
 * detailled building and installation instruction
