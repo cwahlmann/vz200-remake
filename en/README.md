@@ -5,7 +5,7 @@ A remake of the VZ200 Color Computer (Vtech 1983, Dick Smith)
 
 ![Prototyp](../images/vz200-teaser.jpg "VZ200 - 70%")
 
-# whats waiting for you:
+# what's waiting for you:
 
 * design- und printdata for ...
 
