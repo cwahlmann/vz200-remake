@@ -1,7 +1,7 @@
 [![zur deutschen Version](../images/de.png)](../README.md)
 
 # vz200-remake
-A remake of the VZ200 Color Computer (Vtech 1983, Dick Smith)
+A remake of the VZ200 Color Computer (Vtech / Dick Smith 1983)
 
 ![Prototyp](../images/vz200-teaser.jpg "VZ200 - 70%")
 
