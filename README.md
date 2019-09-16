@@ -1,4 +1,4 @@
-[![change to english version](images/en.png)](en/README.md)
+[![change to english version](images/en.png)](en)
 
 # vz200-remake
 Ein Nachbau des VZ200 Color Computers (Vtech / Dick Smith 1983)
