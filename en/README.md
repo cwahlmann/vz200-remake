@@ -1,4 +1,4 @@
-[![zur deutschen Version](../images/de.png)](..)
+[![zur deutschen Version](../images/de.png)](/.)
 
 # vz200-remake
 A remake of the VZ200 Color Computer (Vtech / Dick Smith 1983)
