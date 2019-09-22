@@ -5,6 +5,10 @@ Ein Nachbau des VZ200 Color Computers (Vtech / Dick Smith 1983)
 
 ![Prototyp](images/vz200-teaser.jpg "VZ200 - 70%")
 
+![Screenshot_02](images/screenshot_02.png "Basic Programming")
+![Screenshot_03](images/screenshot_03.png "Charset")
+![Screenshot_05](images/screenshot_05.png "the hunter - bit by a bat")
+
 # Das erwartet dich:
 
 * Design- und Druckdaten für ...
