@@ -8,7 +8,8 @@ A remake of the VZ200 Color Computer (Vtech / Dick Smith 1983)
 We are pleased being part of the program of the Makerfair-Ruhr in Dortmund!
 
 * from **28.3 to 29.3 2020** in DASA in Dortmund
-* see [makerfaire-ruhr.com/maker2020](https://www.makerfaire-ruhr.com/maker2020)
+
+[![makerfaire-ruhr.com/maker2020](images/makerfaire-ruhr-banner.png)](https://www.makerfaire-ruhr.com/maker2020)
 
 During the whole fair we screw and solder on the models. You may join us and look over our shoulder or get your hands on yourself. What we produce together will be raffled off during the fair.
 
