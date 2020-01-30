@@ -11,7 +11,7 @@ Wir freuen uns, im Programm der Makerfair-Ruhr in Dortmund dabei zu sein!
 
 * vom **28. bis 29. März 2020** in der DASA in Dortmund
 
-[![makerfaire-ruhr.com/maker2020](images/makerfaire-ruhr-banner.png)](https://www.makerfaire-ruhr.com/maker2020)
+[![makerfaire-ruhr.com/maker2020](images/makerfaire-ruhr-banner.png)](https://www.makerfaire-ruhr.com/meet-the-makers)
 
 Während der ganzen Messe schrauben und löten wir Modelle zusammen. Ihr könnt uns dabei über  die Schulter schauen, und auch gerne selbst Hand anlegen. Was wir gemeinsam produziert haben, werden wir im Laufe der Messe verlosen.
 
