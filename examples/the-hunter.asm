@@ -13,8 +13,6 @@
 
         JP start_program:
         
-.include utility.asm
-
 start_program:
 // install screen interrupt hook
         LD DE, main:
