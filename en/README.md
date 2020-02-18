@@ -47,7 +47,6 @@ The VZ200 should have a fully functional rubber keyboard. We solved this with a 
 
 ![img_chassis_19_platine_teile](../images/img_chassis_19_platine_teile.jpg "keyboard in pieces")
 
-Der Emulator läuft auf einem Raspberri PI 3b und einem aufgesetzten 5 Zoll HDMI-Display. Für den Sound sorgt ein kleiner Verstärkerchip. Alles zusammen wird in ein Monitorgehäuse eingebaut.
 The emulator runs on a Raspberry PI 3b combined with a 5 inch HDMI display. A small amplifier chip provides the sound. Everything is built into a monitor housing.
 
 ![img_monitor_12_raspberry_tft_audio_funktion](../images/img_monitor_12_raspberry_tft_audio_funktion.jpg "VZ200 auf dem Raspi mit Sound")
