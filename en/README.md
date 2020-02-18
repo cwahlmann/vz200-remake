@@ -40,3 +40,18 @@ At these times, we dig deeper into individual topics:
 * VZ200 Companion App to control your VZ200 from remote by the REST-interface
 * list of all needed parts
 * detailled building and installation instruction
+
+# Impressions from the construction site
+ 
+The VZ200 should have a fully functional rubber keyboard. We solved this with a self-designed circuit board with push buttons, on which the printed mat with rubber buttons lies, connected to an USB keyboard controller. In pieces:
+
+![img_chassis_19_platine_teile](../images/img_chassis_19_platine_teile.jpg "keyboard in pieces")
+
+Der Emulator läuft auf einem Raspberri PI 3b und einem aufgesetzten 5 Zoll HDMI-Display. Für den Sound sorgt ein kleiner Verstärkerchip. Alles zusammen wird in ein Monitorgehäuse eingebaut.
+The emulator runs on a Raspberry PI 3b combined with a 5 inch HDMI display. A small amplifier chip provides the sound. Everything is built into a monitor housing.
+
+![img_monitor_12_raspberry_tft_audio_funktion](../images/img_monitor_12_raspberry_tft_audio_funktion.jpg "VZ200 auf dem Raspi mit Sound")
+
+Here is a picture of the first finished model. The source for the game is available at [the-hunter.asm](examples/the-hunter.asm), or get the .VZ-file [thehunter.vz](examples/thehunter.vz)
+
+![VZ200-komplett-5Zoll-Monitor-TheHunter](../images/VZ200-komplett-5Zoll-Monitor-TheHunter.jpg "das erste fertige Modell")
