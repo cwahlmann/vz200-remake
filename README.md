@@ -40,3 +40,19 @@ Zu diesen Zeiten steigen wir tiefer in einzelne Themen ein:
 * VZ200 Companion App zur Fernsteuerung des VZ200 über die REST-Schnittstelle
 * Liste aller benötigten Bauteile
 * detaillierte Bau- und Installationsanleitung
+
+# Impressionen von der Baustelle
+ 
+Der VZ200 sollte eine voll funktionsfähige Gummitastatur bekommen. Gelöst haben wir das mit einer selbst designten Platine mit Drucktastern, auf der die gedruckte Matte mit Gummitasten liegt, verbunden mit einem USB-Tastaturcontroller. In Einzelteilen: 
+
+![img_chassis_19_platine_teile](images/img_chassis_19_platine_teile.jpg "Tastatur in Einzelteilen")
+
+Der Emulator läuft auf einem Raspberri PI 3b und einem aufgesetzten 5 Zoll HDMI-Display. Für den Sound sorgt ein kleiner Verstärkerchip. Alles zusammen wird in ein Monitorgehäuse eingebaut.
+
+![img_monitor_12_raspberry_tft_audio_funktion](images/img_monitor_12_raspberry_tft_audio_funktion.jpg "VZ200 auf dem Raspi mit Sound")
+
+Hier ein Bild des ersten fertigen Modells. Den Source zum Spiel gibt es unter [the-hunter.asm](examples/the-hunter.asm), oder als .VZ-File [thehunter.vz](examples/thehunter.vz)
+
+![VZ200-komplett-5Zoll-Monitor-TheHunter](images/VZ200-komplett-5Zoll-Monitor-TheHunter.jpg "das erste fertige Modell")
+
+
