@@ -52,6 +52,6 @@ The emulator runs on a Raspberry PI 3b combined with a 5 inch HDMI display. A sm
 
 ![img_monitor_12_raspberry_tft_audio_funktion](../images/img_monitor_12_raspberry_tft_audio_funktion.jpg "VZ200 auf dem Raspi mit Sound")
 
-Here is a picture of the first finished model. The source for the game is available at [the-hunter.asm](examples/the-hunter.asm), or get the .VZ-file [thehunter.vz](examples/thehunter.vz)
+Here is a picture of the first finished model. The source for the game is available at [the-hunter.asm](../examples/the-hunter.asm), or get the .VZ-file [thehunter.vz](../examples/thehunter.vz)
 
 ![VZ200-komplett-5Zoll-Monitor-TheHunter](../images/VZ200-komplett-5Zoll-Monitor-TheHunter.jpg "das erste fertige Modell")
