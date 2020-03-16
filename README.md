@@ -14,6 +14,9 @@ Ein Nachbau des VZ200 Color Computers (Vtech / Dick Smith 1983)
     Stattdessen werden wir euch jetzt nach und nach alles, was wir dort präsentieren wollten, 
     online stellen. Möge der eine oder die andere glückliche Stunden damit verbringen,
     den VZ200 nachzudrucken, zusammenzulöten und aufzubauen!
+    
+    Sollte die Makerfaire später im Jahr nachgeholt werden, was wir hoffen, so stehen die
+    Chancen gut, dass wir uns dort sehen ;-) 
 
 Hier findet ihr schon mal das Video, das bei der Makerfaire im Hintergrund mitlaufen sollte:
 
