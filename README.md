@@ -7,21 +7,23 @@ Ein Nachbau des VZ200 Color Computers (Vtech / Dick Smith 1983)
 
 # *VZ200-remake* auf der Makerfaire-Ruhr
 
-Wir freuen uns, im Programm der Makerfair-Ruhr in Dortmund dabei zu sein!
+    Wir haben uns sehr gefreut, im Programm der Makerfaire-Ruhr in Dortmund dabei zu sein.
+    
+    Allerdings wurde die Messe aufgrund der aktuellen Corona-Krise abgesagt, was wir einerseits sehr bedauern, 
+    andererseits aber auch nachvollziehen können, denn die Gesundheit geht vor.
 
-* vom **28. bis 29. März 2020** in der DASA in Dortmund
+    Stattdessen werden wir jetzt nach und nach alles, was wir dort präsentieren wollten, 
+    online stellen. Möge der eine oder die andere glückliche Stunden damit verbringen,
+    den VZ200 nachzudrucken, zusammenzulöten und aufzubauen!
+    
+    Sollte die Makerfaire später im Jahr nachgeholt werden, was wir hoffen, so stehen die
+    Chancen gut, dass wir uns dort sehen ;-) 
+
+Hier findet ihr schon mal das Video, das bei der Makerfaire im Hintergrund mitlaufen sollte:
+
+[![VZ200 Presentation Makerfaire](images/vz200-remake-presentation-youtube.png)](https://www.youtube.com/watch?v=7TxQ1y71ufA)
 
 [![makerfaire-ruhr.com/maker2020](images/makerfaire-ruhr-banner.png)](https://www.makerfaire-ruhr.com/meet-the-makers)
-
-Während der ganzen Messe schrauben und löten wir Modelle zusammen. Ihr könnt uns dabei über  die Schulter schauen, und auch gerne selbst Hand anlegen. Was wir gemeinsam produziert haben, werden wir im Laufe der Messe verlosen.
-
-Ob Space-Invader oder Hallo Welt – fertige Modelle des „VZ200 Color Computer“ stehen zum Ausprobieren bereit.
-
-Zu diesen Zeiten steigen wir tiefer in einzelne Themen ein:
-
-* 11:00h – 3D-Design und -Druck
-* 14:00h – Platinenlayout mit KiCad
-* 16:00h – Basic- und Assembler-Programmierung
 
 ![Screenshot_02](images/screenshot_02.png "Basic Programming")
 ![Screenshot_03](images/screenshot_03.png "Charset")
