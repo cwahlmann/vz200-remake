@@ -9,12 +9,13 @@ A remake of the VZ200 Color Computer (Vtech / Dick Smith 1983)
 
     We are pleased being part of the program of the Makerfair-Ruhr in Dortmund.
     
-    Unfortunately the faire has been cancelled like many other events this time :-(
-    
-    Instead we now will put online all the material we meant to present to you
-    at the makerfaire. May one or the other spend happy hours reprinting,
+    To our regret the fair has been cancelled like many other events due to the Corona crisis going on,
+    though we do understand the reasoning behind this. Health comes first.  
+
+    To make up for it we now will put online all the material we meant to present to you
+    at the makerfaire. May some of you spend happy hours reprinting,
     souldering and assembling the VZ200! 
-    
+        
     If there is any chance for the faire to be held later this year, you most
     likely will find us there ;-)
 

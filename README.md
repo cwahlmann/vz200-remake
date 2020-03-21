@@ -9,9 +9,10 @@ Ein Nachbau des VZ200 Color Computers (Vtech / Dick Smith 1983)
 
     Wir haben uns sehr gefreut, im Programm der Makerfaire-Ruhr in Dortmund dabei zu sein.
     
-    Hat leider nicht sollen sein :-(
-    
-    Stattdessen werden wir euch jetzt nach und nach alles, was wir dort präsentieren wollten, 
+    Allerdings wurde die Messe aufgrund der aktuellen Corona-Krise abgesagt, was wir einerseits sehr bedauern, 
+    andererseits aber auch nachvollziehen können, denn die Gesundheit geht vor.
+
+    Stattdessen werden wir jetzt nach und nach alles, was wir dort präsentieren wollten, 
     online stellen. Möge der eine oder die andere glückliche Stunden damit verbringen,
     den VZ200 nachzudrucken, zusammenzulöten und aufzubauen!
     
