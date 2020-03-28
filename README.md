@@ -18,7 +18,7 @@ Ein Nachbau des VZ200 Color Computers (Vtech / Dick Smith 1983)
 
 # <a name="druck">Design und Druck der Bauteile</a>
 ## 3d-Modell
-erstellt mit Autodesk Fusion 360 (Startup-Lizenz nur für private Nutzung). Bei Aussparungen für Fußleisten oder andere Elemente, die eingepasst werden müssen bitte beachten, dass die Drucke meist mit ca. 0.1mm zusätzlicher Stärke gedruckt werden, damit die Schichten gut aneinander haften. Hinzu kommt, dass die erste Schicht zwecks besserer Haftung am Druckbett etwas plattgedrückt wird. Entsprechende Toleranzen bitte mit einplanen.
+Das Modell wurde mit Autodesk Fusion 360 erstellt. 
 
 **Bitte beachten**: Das Modell des Computergehäuses und die darin verbaute Elektronik sind dafür 70% der Originalgröße ausgelegt. Die STL-Dateien geben das bereits wieder; in den Fusion-Dateien (.3mf) hat das Gehäuse noch die Originalgröße. Wer das Modell in Originalgröße nachbauen möchte, muss die Pfosten für den Tastaturcontroller anpassen und die Tastaturplatine entsprechend skalieren, bevor sie geätzt wird. Außerdem muss gegebenenfalls die Position der Resetschalter-Halterung angepasst werden.
 
@@ -30,22 +30,16 @@ Die aus Fusion 360 exportierten STL-Dateien werden mit Ultimaker Cura 4.x druckf
 
 Gedruckt wird mit PLA (Gehäuse, Tastaturschablone, Resetschalter) und TPU-Filament (Tastaturmatte). 
 
-PLA entspricht hartem Plastik, bis ca. 60 Grad Celsius verformungssteif, danach wird es weich. Große Auswahl an Farben. 
-
-TPU ist ein flexibles Filament, das sich gut für Handyhüllen oder Gummitastaturen eignet. Die Farbauswahl ist jedoch sehr beschränkt, so dass wir das karamellbraun der Originaltasten nicht direkt drucken können. 
-
-Für den VZ 200 nehmen wir Weiß (Gehäuse), schokoladenbraun (Tastaturabdeckung) und holzbraun für die Tastatur (holzartig) oder eben blau (gummiartig).
-
-Auch möglich ist PET-G, eine Abwandlung des in der Industrie üblichen PET mit denselben Eigenschaften. Liegt aktuell nur in HellGrau vor.
+Für den VZ 200 nehmen wir Weiß (Gehäuse), schokoladenbraun (Tastaturabdeckung) und eine beliebige TPU-Farbe für die Tastaturmatte (gummiartig).
 
 # <a name="platinendesign">Platinendesign und -produktion</a>
 
-Eigenes Platinenlayout mit Dip-Schaltern (6mm; Höhe über Platine: 4,5mm; 4 Füße), die über eine Gummi-Tastaturmappe betätigt werden.
+Eigenes Platinenlayout mit Dip-Schaltern (6mm; Höhe über Platine: 4,5mm; 4 Füße), die über eine Gummi-Tastaturmatte betätigt werden.
 Tastaturcontroller: KEYWARRIOR24_8_MODUL_KW24_8_MOD
 
 Das Layout kann, als Zip mit GBR-Dateien, über diverse Anbieter in kleiner Stückzahl (meist >= 3) produziert werden. 
 
-Gute Erfahrungen habe ich gemacht mit [Aisler](https://aisler.net). 
+Gute Erfahrungen haben wir mit [Aisler](https://aisler.net) gemacht. 
 
 ![Platinenlayout Keyboard](tastatur/screenshots/vz200-keyboard-laypout-v1.0.png "Platinenlayout Keyboard")
 ![Platinenlayout Keyboard](tastatur/screenshots/vz200-keyboard-laypout-3d-v1.0.png "Platinenlayout Keyboard")
@@ -87,7 +81,7 @@ den Monitor integriert. Der VZ200 wird als USB-Tastatur an den Raspberry angesch
 ## hintere Gehäuseabdeckung mit Logo versehen
 ![Aufkleber Logo](images/resized/img_chassis_01_aufkleber_logo.jpg "Aufkleber Logo")
 
-Das gedruckt Logo muss wir abgebildet auf der hinteren Gehäuseabdeckung angebracht werden.
+Das gedruckt Logo muss wie abgebildet auf der hinteren Gehäuseabdeckung angebracht werden.
 
 ![Abdeckung hinten](images/resized/img_chassis_02_abdeckung_hinten.jpg "Abdeckung hinten")
 
@@ -404,7 +398,7 @@ Raspi-Configuration starten und folgende Einstellungen vornehmen:
 sudo raspi-config
 ```
 
-## Slash-Screen installieren:
+## Splash-Screen installieren:
 
 Bearbeiten der Datei `/boot/config.txt`:
 ```
@@ -543,9 +537,6 @@ Endpunkt | Method | Request | Response | Beschreibung
 /registers | GET  | | String | gibt den den Wert aller Z80-Register als JSON zurück
 
 # <a name="useful-links">Nützliche Links</a>
-
-Raspi-Emulator für Windows (leider schon 7 Jahre alt)
-* https://sourceforge.net/projects/rpiqemuwindows/
 
 VZ-Dokumentation
 * http://vzalive.bluebilby.com/archive/
