@@ -3,6 +3,8 @@ Ein Nachbau des VZ200 Color Computers (Vtech / Dick Smith 1983)
 
 ![Teaser](images/vz200-teaser.jpg "VZ200 - 70%")
 
+**[@ Resourcen und Downloads](00_resource.md)**
+
 **[@ Design und Druck der Bauteile](01_druck.md)**
 
 **[@ Platinendesign und -produktion](02_platinendesign.md)**
