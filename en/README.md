@@ -3,6 +3,8 @@ A replica of the VZ200 Color Computer (Vtech / Dick Smith 1983)
 
 ![Teaser](../images/vz200-teaser.jpg "VZ200 - 70%")
 
+**[@ Resources and downloads](00_resource.md)**
+
 **[@ Designing and printing the Parts](01_print.md)**
 
 **[@ Cirquit board design and production](02_cirquitboarddesign.md)**
