@@ -64,7 +64,7 @@ Now to prepare the keyboard mask. Have the 3d printed mask and the ink jet print
 
 ![Keyboard mask sticker](../images/resized/img_chassis_12_tastaturabdeckung_aufkleber.jpg "Keyboard mask sticker")
 
-Die Aussparungen für die Tasten und die Power-LED werden mit dem Cutter herausgetrennt.
+Use a cutter to remove the material for the keys and the Power LED.
 
 ![Keyboard mask sticker cutting](../images/resized/img_chassis_13_aufkleber.jpg "Keyboard mask sticker cutting")
 ![Keyboard mask sticker cutting 2](../images/resized/img_chassis_14_aufkleber.jpg "Keyboard mask sticker cutting 2")
