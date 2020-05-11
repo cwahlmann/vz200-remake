@@ -8,6 +8,28 @@ The model has been designed with Autodesk Fusion 360.
 ![3d-Layout bottom](../3d-model/screenshots/VZ-Fusion-v3-Boden.png "3d Layout bottom")
 ![3d-Layout Monitor](../3d-model/screenshots/monitor-v2_2.png "3d Layout Monitor")
 
+## Resources and downloads
+
+Hardware
+* 3d-printing files (TODO)
+* [Gerber-files for keyboards circuit board](../resources/gerber/vz200-keyboard-layout.zip)
+* [Graphics for the keyboard](resources/aufkleber/Aufkleber-2x70perc.png)
+* [Graphics for the logo](resources/aufkleber/logo_7x70perc_A4.png)
+
+Software
+* [JemuVZ200 Emulator V2.0](resources/releases/JemuVZ200-2.0.zip)
+* VZ200 Companion App (TODO)
+
+Dokumentation und Beispiele
+* [Z80 instruction set](resources/doc/z80.pdf)
+* [VZ200 Basic instruction set](resources/doc/VZ200-Basic.pdf)
+* ["Hello World" (assembler) tutorial](resources/doc/tutorial/hello-world-asm-tutorial.pdf)
+* ["Side Scrolling" (assembler) tutorial](resources/doc/tutorial/side-scroll-asm-tutorial.pdf)
+* [Tutorial presentation (LibreOffice)](resources/doc/tutorial/VZ200-tutorial.odp)
+
+Sources are available at:
+* https://github.com/cwahlmann/vz200
+
 ## Printing
 
 The STL files exported from Fusion 360 have to be prepared and sliced for printing, we used Cura 4.x. This project already contains GCODE files for Creality Ender 3. 
