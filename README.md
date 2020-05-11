@@ -41,7 +41,7 @@ Dokumentation und Beispiele
 * [Tutorial Präsentation (LibreOffice)](resources/doc/tutorial/VZ200-tutorial.odp)
 
 Alle Sourcen sind zu finden unter
-* https://github.com/cwahlmann/vz200
+* [github.com/cwahlmann/vz200](https://github.com/cwahlmann/vz200)
 
 ## *VZ200-remake* auf der Makerfaire-Ruhr
 
