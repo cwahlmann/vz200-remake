@@ -80,9 +80,9 @@ Now the keyboard mat will be inserted into the mask's back and the mask inserted
 ![Insert Keyboard mask into the frame](../images/resized/img_chassis_17_abdeckung_vorne_komplett.jpg "Insert Keyboard mask into the frame")
 ![Keyboard mask in frame from below](../images/resized/img_chassis_18_abdeckung_vorne_unten.jpg "Keyboard mask in frame from below")
 
-## Soldering and assemblying of the electronics
+## Soldering and assemblying the electronics
 
-The Image shows an overview of the parts required:
+The Image shows all the parts required:
 
 ![Parts overview circuit board](../images/resized/img_chassis_19_platine_teile.jpg "Parts overview circuit board")
 
@@ -101,7 +101,7 @@ Then screw in the two short screws into the board to later attach it to the bott
 
 Now connect the USB cable to the keyboard controller like shown here. 
 
-**Attention:** The cabel needs to be put through the hole in back of the bottom cover and knotted once inside to prevent drag on the cables.
+**Attention:** The cabel needs to be put through the hole in the back of the bottom cover and knotted inside once to prevent drag on the cables.
 
 | USB cable bare wire color | Controller port | 
 | --------------------- | -------------------- |
@@ -128,7 +128,7 @@ Now add the micro switches, the Power LED and the resistor to the keyboard cirqu
 
 ![Circuit board micro switches](../images/resized/img_chassis_28_platine_taster.jpg "Circuit board micro switches")
 
-The positive pole of the LED (long leg) needs to go into the square hole of the circuit board.
+The positive pol of the LED (long leg) needs to go into the square hole of the circuit board.
 
 ![Circuit Board Power LED](../images/resized/img_chassis_29_platine_powerled.jpg "Circuit Board Power LED")
 
@@ -140,7 +140,7 @@ Now solder the red / white wire, already connected to +5V / GND of the keyboard 
 
 The white bordered soldering contact represents Negative (white bare wire), the quadratic contact is Positive (red bare wire).
 
-After this solder the two 8-core flat cables to the keyboard circuit board. Please double check for the correct orientation and connections; the soldering contacts on the keyboard circuit board are labeled x0-x7 and y0-y7. 
+After this solder the two 8-core flat cables to the keyboard circuit board. Please double check for the correct orientation and connections; the soldering contacts on the keyboard circuit board are labeled x0-x7 and y0-y7 to help you.
 
 ![Circuit board Controller](../images/resized/img_chassis_31_platine_controller.jpg "Circuit board Controller")
 ![Circuit board Controller 2](../images/resized/img_chassis_32_platine_controller.jpg "Circuit board Controller 2")
@@ -176,9 +176,9 @@ Congratulations, You have just completed your first VZ200 replica!
 
 The JEmu emulator can be run on a Raspberry Pi 3b+ or higher or on a PC. Plug in the VZ200 as an USB keyboard in either case.
 
-Important notice: In case the keyboard produces more than one keypress unintentionally or shows multiple different chars at once on one keypress, there most likely is a shortcut between one or more of the micro switches. This may happen occasionally if not all of the very fine threads of the wires have been soldered correctly and produce a bridge to another micro switch. 
+Important notice: In case the keyboard produces more than one keypress unintentionally or shows multiple different chars at once on one keypress, there most likely is a shortcut between one or more of the micro switches. This may happen occasionally if some of the very fine threads of the wires have not been soldered correctly and produce a bridge to another micro switch. 
 
-To get rid of that we recommend inspecting the circuit board under a strong lamp from every angle, probably utilizing a magnifying glas. Even the most tiny threads will light up eventually and you'll be able to cut and remove them. Focus on the keys producing erroneous results.
+To get rid of those issues we recommend inspecting the circuit board under a strong lamp from every angle, probably utilizing a magnifying glas. Even the most tiny threads will light up eventually and you'll be able to cut and remove them. Focus on the keys producing erroneous results.
 
 Another source for errors: Cold soldering contacts (this applies to the whole project). These are easily spotted by their slightly matt and milky surface. Please resolder these.
 
