@@ -1,25 +1,25 @@
 # vz200-remake
 Ein Nachbau des VZ200 Color Computers (Vtech / Dick Smith 1983)
 
+**[==>> RESOURCEN & DOWNLOADS <<==](#resourcen-und-downloads)** 
+
 ![Teaser](images/vz200-teaser.jpg "VZ200 - 70%")
 
-**[===>>> RESOURCEN & DOWNLOADS](#resourcen-und-downloads)**
+**[=> Design und Druck der Bauteile](01_druck.md)**
 
-**[@ Design und Druck der Bauteile](01_druck.md)**
+**[=> Platinendesign und -produktion](02_platinendesign.md)**
 
-**[@ Platinendesign und -produktion](02_platinendesign.md)**
+**[=> Zusammenbau des VZ200](03_zusammenbau_vz200.md)**
 
-**[@ Zusammenbau des VZ200](03_zusammenbau_vz200.md)**
+**[=> Zusammenbau des Monitors mit TFT-Display, Raspberry-Pi und Lautsprecher](04_zusammenbau_monitor.md)**
 
-**[@ Zusammenbau des Monitors mit TFT-Display, Raspberry-Pi und Lautsprecher](04_zusammenbau_monitor.md)**
+**[=> Installation des Raspberry Pi](05_installation.md)**
 
-**[@ Installation des Raspberry Pi](05_installation.md)**
+**[=> Der VZ200 Emulator](06_emulator.md)**
 
-**[@ Der VZ200 Emulator](06_emulator.md)**
+**[=> VZ200 Companion App](apps/README.md)**
 
-**[@ VZ200 Companion App](apps/README.md)**
-
-**[@ Nützliche Links](08_links.md)**
+**[=> Nützliche Links](08_links.md)**
 
 ![Prototyp](images/resized/VZ200-komplett-5Zoll-Monitor-TheHunter.jpg "VZ200 - 70%")
 
