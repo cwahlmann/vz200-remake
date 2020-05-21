@@ -1,81 +1,84 @@
-**[ZURÜCK](README.md)**
-# <a name="monitor">Zusammenbau des Monitors mit TFT-Display, Raspberry-Pi und Lautsprecher</a>
+**[BACK](README.md)**
+# <a name="monitor">Monitor Assembly with TFT Display, Raspberry-Pi and Speaker</a>
 
-## benötigte Bauteile
+## Required Parts
 
-| Bauteil | Beschreibung |
+| Part | Description |
 | ------- | ------------ |
-| Gedruckte Teile | Vorderseite, Front, Rückseite, Befestigungsring für Lautsprecher, 4 Gummifüße |
-| Audio-Verstärker | Mini Audio Verstärkerplatine PAM8403 DC 5V (z.B. über https://www.roboter-bausatz.de) |
-| 3,5er Stereo Klinkenstecker | gerne gebraucht, da dieser sowieso "entkernt" werden muss |
-| Lautsprecher | 2 Zoll / 5 cm Miniaturlautsprecher 3 W 4 Ohm |
-| Widerstände für Spannungsteiler: 1x 1000 kOhm, 1x 47 Ohm| der Spannungsteiler reduziert Spannung direkt am Lautsprecher und damit auch die Verstärker-eigenen Störgeräusche |
+| 3D Printed parts | Case Front and Back, Front Plate (optional), holding ring for speaker, 4 rubber feet (TPU) |
+| Audio Amplifier | Mini Audio Amplifier PAM8403 DC 5V |
+| 3.5" Stereo plug | best use a used one since it has to be ripped apart anyway |
+| Speaker | 2" / 5 cm mini speaker 3 W 4 Ohm |
+| Resistors for the voltage divider : 1x 1000 kOhm, 1x 47 Ohm| This divider reduces the voltage directly at the speaker to minimize volume and amplifier noise |
 | Raspberry Pi | Modell >= 3b |
 | TFT-Display | JOY-iT 5“ HDMI Touchscreen Display |
-| 4 Schrauben M2 6mm | Befestigung des Lautsprechers im Gehäuse |
-| 4 Schrauben M2 8mm | Verschrauben des Gehäuses |
-| 4 Schrauben M2 6mm| Befestigung des Displays |
+| 4 screws M2 6mm | To attach the speaker within the case |
+| 4 screws M2 8mm | To assemble and fasten the case |
+| 4 screws M2 6mm| To attach the display |
+| Double side adhesive tape | To attach the Audio Amplifier |
 
-![Audio Schaltplan](audio/audio_schaltplan_skaliert.png "Audio Verstärker Schaltplan")
-![Bauteile Druck](images/img_monitor_02_bauteile_druck.jpg "Bauteile Druck")
-![Bauteile elektrisch](images/img_monitor_01_bauteile_elektrisch.jpg "Bauteile elektrisch")
+Attention: Other than the VZ 200 model the Monitor parts do not need to be scaled down to 70%.
 
-## Zusammenbau des Monitors
+![Audio schematics](../audio/audio_schaltplan_skaliert.png "Audio Amplifier Schematics")
+![Parts Printed](../images/img_monitor_02_bauteile_druck.jpg "Parts Printed")
+![Electric parts](../images/img_monitor_01_bauteile_elektrisch.jpg "Electric parts")
 
-Das TFT wird auf die GPIO-Pins des Raspberry aufgesteckt und anschließend mit der HDMI-Brücke verbunden.
+## Assemble the Monitor
 
-![TFT-Display](images/img_monitor_03_raspberry_tft.jpg "TFT-Display")
-![TFT-Display](images/img_monitor_04_raspberry_tft_2.jpg "TFT-Display")
+Attach the TFT display to the GPIO Pins of the Raspberry and then connect both parts with the HDMI bridge.
 
-Der Audioverstärker "PAM8403" verstärkt die Signale des Raspberry sehr laut, produziert dabei aber auch eine Menge Nebengeräusche. Durch einen Spannungsteiler wird die Lautstärke etwas abgedämpft, was sich positiv auf die Störgeräusche auswirkt. 
+![TFT Display](../images/img_monitor_03_raspberry_tft.jpg "TFT Display")
+![TFT Display](../images/img_monitor_04_raspberry_tft_2.jpg "TFT Display")
 
-![Lautsprecher Spannungsteiler](images/img_monitor_05_speaker_spannungsteiler.jpg "Lautsprecher Spannungsteiler")
-![Lautsprecher Spannungsteiler Detail](images/img_monitor_06_speaker_spannungsteiler_2.jpg "Lautsprecher Spannungsteiler Detail")
+The Audio Amplifier "PAM8403" amplifies the Raspberry signal quite a bit, yet also produces a lot of noise. By inserting a voltage divider and resistors both audio volume and noise will be dampened to an acceptable level.
 
-Das Audiokabel wird wie abgebildet an den Klinkenstecker gelötet.
+![Speaker voltage divider](../images/img_monitor_05_speaker_spannungsteiler.jpg "Speaker voltage divider")
+![Speaker voltage divider Detail](../images/img_monitor_06_speaker_spannungsteiler_2.jpg "Speaker voltage divider Detail")
 
-![Audiokabel](images/img_monitor_07_klinke.jpg "Audiokabel")
-![Audiokabel Detail](images/img_monitor_08_klinke_2.jpg "Audiokabel Detail")
+Solder the audio cable to the audio plug as shown here.
 
-Die Stromversorgung des Audioverstärkers wird über die GPIO-Pins am TFT-Display abgegriffen (das TFT nutzt nur wenige der Pins selbst).
+![Audio cable](../images/img_monitor_07_klinke.jpg "Audio cable")
+![Audio cable Detail](../images/img_monitor_08_klinke_2.jpg "Audio cable Detail")
 
-![Power-Kabel Löten](images/img_monitor_09_audioverstärker_power.jpg "Power-Kabel Löten")
-![Power-Kabel](images/img_monitor_10_audioverstärker_power_2.jpg "Power-Kabel")
+Power for the audio amplifier is taken from the GPIO pins of the TFT display (the display only utilizes a few Pins itself).
 
-Die Gesamtverkabelung sieht dann so aus. Bitte auf die Bezeichnungen an der Verstärkerplatine achten, die Stecker dürfen nicht verkehrt eingesteckt werden.
+![Solder Power Cable](../images/img_monitor_09_audioverstärker_power.jpg "Solder Power Cable")
+![Power Cable](../images/img_monitor_10_audioverstärker_power_2.jpg "Power Cable")
 
-![Audio-Verkabelung](images/img_monitor_11_audio_gesamt.jpg "Audio-Verkabelung")
+Here's how the completed cabeling looks like. Please pay attention to the labels on the amplifier board, those plugs must NOT plugged in in the incorrect order.
 
-Wenn alles richtig ist, kann der rohe VZ200 schon in Betrieb genommen werden.
+![Audio Cabeling](../images/img_monitor_11_audio_gesamt.jpg "Audio Cabeling")
 
-![Funktionstest](images/img_monitor_12_raspberry_tft_audio_funktion.jpg "Funktionstest")
+The VZ200 can be now run through a first test.
 
-Um Kurzschlüssel vorzubeugen, wird um den langen Widerstand des Spannungsteilers ein Stück Isolierband geklebt.
+![functional test](../images/img_monitor_12_raspberry_tft_audio_funktion.jpg "functional test")
 
-![Lautsprecher Isolierung](images/img_monitor_13_speaker_isolierung.jpg "Lautsprecher Isolierung")
+To avoid shortages, apply an isolating tape to the long resistor of the voltage divider. 
 
-Der Lautsprecher wird mit Hilfe des gedruckten Rings mit vier Schrauben ins Gehäuse geschraubt. Die Verstärkerplatine wird mit doppelseitigem Klebeband, einem Stück Kautschuk o.ä. angeklebt.
+![Speaker isolation](../images/img_monitor_13_speaker_isolierung.jpg "Speaker isolation")
 
-![Einbau in Monitor Lautsprecher und Verstärker](images/img_monitor_14_speaker_verstärker_einbau.jpg "Einbau in Monitor Lautsprecher und Verstärker")
+Attach the speaker with the 3D printed ring to the back case and fasten it with four screws. Use double side adhesive tape to attach the audio amplifier.
 
-Das TFT_Display wird mit dem angesteckten Raspberry mit vier Schrauben in der Vorderseite des Gehäuses befestigt.
+![Monitor Speaker and Amplifier assembly](../images/img_monitor_14_speaker_verstärker_einbau.jpg "Monitor Speaker and Amplifier assembly")
 
-![Einbau in Monitor TFT](images/img_monitor_16_raspberry_tft_einbau_2.jpg "Einbau in Monitor TFT")
+Then use another 4 screws to attach the TFT display with the plugged in Raspberry to the case front.
 
-Dann werden alle Kabel an die Verstärkerplatine gesteckt und die beiden Monitorhälften werden mit 4 Schrauben aneinander geschraubt.
+![Monitor TFT & Rasbpi assembly](../images/img_monitor_16_raspberry_tft_einbau_2.jpg "Monitor TFT & Rasbpi assembly")
 
-![Verkabelung](images/img_monitor_17_verkabelung_gesamt.jpg "Verkabelung")
+To complete the monitor interior plug in all cables to the amplifier board and assemble the two monitor parts by fastening them with 4 screws.
 
-Unten an den Monitor werden die vier Gummifüße geklebt.
+![Cabeling](../images/img_monitor_17_verkabelung_gesamt.jpg "Cabeling")
 
-![Gummifuesse ankleben](images/img_monitor_18_gummifuesse.jpg "Gummifuesse ankleben")
+Glue the four monitor feet onto the bottom side of the monitor.
 
-Die separat gedruckte Front wird nun von vorne an das Gehäuse geklebt.
+![Glue rubber feet](../images/img_monitor_18_gummifuesse.jpg "Glue rubber feet")
 
-![Monitor Front aufkleben](images/img_monitor_21_monitor_front.jpg "Monitor Front aufkleben")
+Then either glue the seperately printed front panel to the front or design your own one. 
 
-Wer mag, kann das Gehäuse noch nach Belieben mit Farbe versehen. Hier ein Beispiel im RETRO-Look.
+![Glue monitor front panel](../images/img_monitor_21_monitor_front.jpg "Glue monitor front pane")
 
-![Monitor bemalt](images/img_monitor_22_monitor_bemalt.jpg "Monitor bemalt")
+Now paint the monitor to your liking. Here is an example in a 1950er retro look;
 
-**[ZURÜCK](README.md)**
+![Painted Monitor](../images/img_monitor_22_monitor_bemalt.jpg "Painted Monitor")
+
+**[BACK](README.md)**
