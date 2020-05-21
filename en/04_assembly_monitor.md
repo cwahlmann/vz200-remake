@@ -45,7 +45,7 @@ Power for the audio amplifier is taken from the GPIO pins of the TFT display (th
 ![Solder Power Cable](../images/img_monitor_09_audioverstärker_power.jpg "Solder Power Cable")
 ![Power Cable](../images/img_monitor_10_audioverstärker_power_2.jpg "Power Cable")
 
-Here's how the completed cabeling looks like. Please pay attention to the labels on the amplifier board, those plugs must NOT plugged in in the incorrect order.
+Here's how the completed cabeling looks like. Please pay attention to the labels on the amplifier board, those plugs must be plugged in with the correct orientation.
 
 ![Audio Cabeling](../images/img_monitor_11_audio_gesamt.jpg "Audio Cabeling")
 
