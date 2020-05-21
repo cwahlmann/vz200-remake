@@ -33,7 +33,7 @@ Hardware
 * [Grafiken für das Logo](resources/aufkleber/logo_7x70perc_A4.png)
 
 Software
-* [JemuVZ200 Emulator V2.0](resources/releases/JemuVZ200-2.0.zip)
+* [JemuVZ200 Emulator V2.1](resources/releases/JemuVZ200-2.1.zip)
 * VZ200 Companion App (TODO)
 
 Dokumentation und Beispiele
@@ -45,22 +45,6 @@ Dokumentation und Beispiele
 
 Alle Sourcen sind zu finden unter
 * [github.com/cwahlmann/vz200](https://github.com/cwahlmann/vz200)
-
-## *VZ200-remake* auf der Makerfaire-Ruhr
-
-    Wir haben uns sehr gefreut, im Programm der Makerfaire-Ruhr in Dortmund dabei zu sein.
-    
-    Allerdings wurde die Messe aufgrund der aktuellen Corona-Krise abgesagt, was wir einerseits sehr bedauern, 
-    andererseits aber auch nachvollziehen können, denn die Gesundheit geht vor.
-
-    Stattdessen werden wir jetzt nach und nach alles, was wir dort präsentieren wollten, 
-    online stellen. Möge der eine oder die andere glückliche Stunden damit verbringen,
-    den VZ200 nachzudrucken, zusammenzulöten und aufzubauen!
-    
-    Sollte die Makerfaire später im Jahr nachgeholt werden, was wir hoffen, so stehen die
-    Chancen gut, dass wir uns dort sehen ;-) 
-
-[![makerfaire-ruhr.com/maker2020](images/makerfaire-ruhr-banner.png)](https://www.makerfaire-ruhr.com/meet-the-makers)
 
 ![Screenshot_02](images/screenshot_02.png "Basic Programming")
 ![Screenshot_03](images/screenshot_03.png "Charset")
