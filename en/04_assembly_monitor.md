@@ -73,11 +73,11 @@ Glue the four monitor feet onto the bottom side of the monitor.
 
 ![Glue rubber feet](../images/img_monitor_18_gummifuesse.jpg "Glue rubber feet")
 
-Then either glue the seperately printed front panel to the front or design your own one. 
+Then either glue the seperately printed front panel to the front or design your own one. Hint: Paint the front panel beforehand to avoid compromising the TFT panel.
 
 ![Glue monitor front panel](../images/img_monitor_21_monitor_front.jpg "Glue monitor front pane")
 
-Now paint the monitor to your liking. Here is an example in a 1950er retro look;
+Now paint the rest of the monitor to your liking. If you already glued the front panel to the monitor, use masking tape to cover the TFT panel. Here is an example in a 1950er retro look;
 
 ![Painted Monitor](../images/img_monitor_22_monitor_bemalt.jpg "Painted Monitor")
 
