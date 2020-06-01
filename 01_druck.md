@@ -9,6 +9,12 @@ Das Modell wurde mit Autodesk Fusion 360 erstellt.
 ![3d-Layout Monitor](3d-model/screenshots/monitor-v2_2.png "3d-Layout Monitor")
 
 ## Drucke
+
+Druckdateien
+* [STL files auf Thingiverse](https://www.thingiverse.com/thing:4415555)
+* [3d-Modell VZ200](resources/3d-model/vz200.f3d)
+* [3d-Modell Monitor](resources/3d-model/Monitor_5-Zoll.f3d) 
+
 Die aus Fusion 360 exportierten STL-Dateien werden mit Ultimaker Cura 4.x druckfertig gemacht -> Das Projekt enthält gcode-Dateien für Creality Ender 3.
 
 Gedruckt wird mit PLA (Gehäuse, Tastaturschablone, Resetschalter) und TPU-Filament (Tastaturmatte). 

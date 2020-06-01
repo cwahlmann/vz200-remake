@@ -11,7 +11,7 @@ The model has been designed with Autodesk Fusion 360.
 ## Resources and downloads
 
 Hardware
-* 3d-printing files (TODO)
+* [STL files on Thingiverse](https://www.thingiverse.com/thing:4415555)
 * [Gerber-files for keyboards circuit board](../resources/gerber/vz200-keyboard-layout.zip)
 * [Graphics for the keyboard](resources/aufkleber/Aufkleber-2x70perc.png)
 * [Graphics for the logo](resources/aufkleber/logo_7x70perc_A4.png)
@@ -20,7 +20,7 @@ Software
 * [JemuVZ200 Emulator V2.0](resources/releases/JemuVZ200-2.0.zip)
 * VZ200 Companion App (TODO)
 
-Dokumentation und Beispiele
+Documentation and Examples
 * [Z80 instruction set](resources/doc/z80.pdf)
 * [VZ200 Basic instruction set](resources/doc/VZ200-Basic.pdf)
 * ["Hello World" (assembler) tutorial](resources/doc/tutorial/hello-world-asm-tutorial.pdf)
@@ -28,7 +28,7 @@ Dokumentation und Beispiele
 * [Tutorial presentation (LibreOffice)](resources/doc/tutorial/VZ200-tutorial.odp)
 
 Sources are available at:
-* https://github.com/cwahlmann/vz200
+* https://github.com/cwahlmann/vz200-remake
 
 ## Printing
 
