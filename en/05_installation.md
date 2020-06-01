@@ -1,19 +1,23 @@
-**[ZURÜCK](README.md)**
-# <a name="installation">Installation des Raspberry Pi</a>
+**[BACK](README.md)**
+# <a name="installation">Prepare and install the Emulator on the Raspberry Pi</a>
 
-## Projekt bauen mit Gradle:
+## Build the project with Gradle
+
+From the Emulator sub directory run
 ```
 gradle createVZ200Zip
 ```
-Es entsteht ein Zip mit allen benötigten Dateien unter `build\distributions\JemuVZ200.zip`
 
-## Installieren der Desktop-Version des Betriebssystems Raspbian
-siehe Raspbian-Dokumentation unter www.raspbian.org
-(Raspbian Buster Desktop Lite)
+You'll get a zip file with all the files required located at `build\distributions\JemuVZ200.zip`.
 
-## gebautes Zip installieren
-Zip-Datei ins Home-Verzeichnis des Raspberry kopieren und entpacken.
-Danach sollte folgende Verzeichnisstruktur entstanden sein:
+## Install the desktop variant of Raspbian OS
+
+Follow the instructions on https://www.raspbian.org/ by using the image for "Raspbian Buster Desktop Lite".
+
+## Install the emulator
+
+Copy and extract the Zip file to the home directory of the Raspberry.
+The resulting directory structure should look like this:
 
 ```
 pi@raspberrypi:~ $ unzip JemuVZ200.zip
@@ -37,42 +41,50 @@ Archive:  JemuVZ200.zip
   inflating: vz200.sh
 ```
 
-## Startskript ausführbar machen
-`dos2unix` installieren:
+## Make the start script executable 
+
+If you built the Emulator on a Windows machine perform two additional steps:
+
+1. Install `dos2unix`:
 ```
 sudo apt-get install dos2unix
 ```
 
-Zeilenumbrüche nach Unix konvertieren:
+2. Convert Linefeeds to Unix Style:
 ```
 dos2unix vz200.desktop
 dos2unix vz200.sh
 ```
 
-Execute-Flag setzen:
+Set Execute Flag:
 ```
 chmod +x vz200.sh
 ```
 
-## Emulator automatisch starten
-Die Datei `vz200.desktop` in den Autostart-Ordner kopieren:
+## Launch Emulator automatically
+
+Copy the file `vz200.desktop` to the autostart directory:
 ```
 mkdir ~/.config/autostart
 cp vz200.desktop ~/.config/autostart
 ```
-## joe Texteditor installieren
+
+## Install joe Text Editor
+
 ```
 sudo apt-get install joe
 ```
-(Alternativ kann auch der schon installierte Editor `nano` genutzt werden.)
+(You may also use the already installed `nano` editor)
 
-## JAVA und ALSA-Sound-Treiber installieren
-Installieren der OpenJDK-8 Runtime und des ALSA-Treibers mit `apt-get`:
+## Install JAVA and the ALSA Sound Driver
+
+Install OpenJDK-8 Runtime and ALSA Driver by `apt-get`:
 ```
 sudo apt-get install openjdk-8-jre
 sudo apt-get install alsa-base alsa-utils
 ```
-Die Java-Sound-Konfiguration anpassen (PulseAudio auskommentieren, DirectAudioDevice einkommentieren):
+
+Adapt the Java Sound Configuration (comment PulseAudio, uncomment DirectAudioDevice):
 ```
 sudo joe /etc/java-8-openjdk/sound.properties
 #javax.sound.sampled.Clip=org.classpath.icedtea.pulseaudio.PulseAudioMixerProvider`
@@ -85,30 +97,30 @@ javax.sound.sampled.Port=com.sun.media.sound.PortMixerProvider
 javax.sound.sampled.SourceDataLine=com.sun.media.sound.DirectAudioDeviceProvider
 javax.sound.sampled.TargetDataLine=com.sun.media.sound.DirectAudioDeviceProvider
 ```
-Editor verlassen mit STRG-K und X.
-   
-Raspi-Configuration starten und folgende Einstellungen vornehmen:
-- Umstellen audio auf headphone
+Exit the Joe Editor by STRG-K and X.
+
+Launch Raspi Configuration and change the following Settings:
+- Switch audio to headphone 
 ```
 sudo raspi-config
 ```
 
-## Splash-Screen installieren:
+## Install the Splash-Screen:
 
-Bearbeiten der Datei `/boot/config.txt`:
+Edit `/boot/config.txt`:
 ```
 sudo joe /boot/config.txt
 ```
-Folgende Zeile hinzufügen:
+Add this line:
 ```
 disable_splash=1
 ```
 
-Bearbeiten der Datei `/usr/share/plymouth/themes/pix/pix.script`:
+Edit `/usr/share/plymouth/themes/pix/pix.script`:
 ```
 sudo joe /usr/share/plymouth/themes/pix/pix.script
 ```
-Folgende Zeilen auskommentieren:
+Comment these lines:
 ```
 message_sprite = Sprite();
 message_sprite.SetPosition(screen_width * 0.1, screen_height * 0.9, 10000);
@@ -116,32 +128,33 @@ my_image = Image.Text(text, 1, 1, 1);
 message_sprite.SetImage(my_image);
 ```
 
-Bearbeiten der Datei `/boot/cmdline.txt`:
+Edit `/boot/cmdline.txt`:
 ```
 sudo joe /boot/cmdline.txt
 ```
-- `console=tty1` durch `console=tty3` ersetzen
-- und folgende Parameter ans Ende der Zeile anfügen:
+- Replace `console=tty1` with `console=tty3`
+- and add this parameter to the end of the line:
 ```
 splash quiet plymouth.ignore-serial-consoles logo.nologo vt.global_cursor_default=0
 ```
 
-Splash-Screen anpassen:
+Adapt Splash Screen:
 ```
 sudo cp ~/vz200/desktop-wallpaper-1.png /usr/share/plymouth/themes/pix/splash.png
 ```
-Quelle: https://scribles.net/customizing-boot-up-screen-on-raspberry-pi/
+Source: https://scribles.net/customizing-boot-up-screen-on-raspberry-pi/
 
-In der Desktop-Umgebung das Hintergrundbild `~/vz200/desktop-wallpaper-1.png` einstellen.
+From within the Desktop Environment change the background image to `~/vz200/desktop-wallpaper-1.png`.
 
-## Lautstärke auf Maximum stellen:
+## Set Volume to Max:
+
 ```
 amixer sset 'Master' 65536
 ```
-Taskleiste ausblenden: Rechtsklick auf Taskleite - Leisteneinstellungen - Erweitert: Leiste bei Nichtbenutzung minimieren + Größe bei minimiertem Zustand: 0 Pixel
+Hide Taskbar: : Right Click on Taskbar -> Bar Settings -> Advanced: Minimize Task Bar when not used + Size when minimized: 0 Pixel
 
-HDMI-Settings in /boot/config.txt anpassen: `disable-overscan=1`, `hdmi_group=1`, `hdmi_mode=3`
+Adapt HDMI Settings in /boot/config.txt: `disable-overscan=1`, `hdmi_group=1`, `hdmi_mode=3`
 
-Nach einem Reboot sollte der Emulator im Vollbildmodus starten.
+After a reboot the Emulator should launch in Fullscreen Mode. 
 
-**[ZURÜCK](README.md)**
+**[BACK](README.md)**
