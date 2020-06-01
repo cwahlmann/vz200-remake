@@ -23,8 +23,8 @@ READY
 
 PORT | IN / OUT | Beschreibung
 -----|----------|-------------
-250  | IN       | READ part of IP-Adress at <index> and increment <index>
-250  | OUT      | SET <index> to [n] (0-3)
+250  | IN       | READ part of IP-Adress at [index] and increment [index]
+250  | OUT      | SET [index] to [n] (0-3)
 
 ## Erweiterung Audio Device
 
@@ -76,7 +76,7 @@ PORT | IN / OUT | Beschreibung
 
 Informationen zu den einzelnen Methoden können online abgerufen werden:
 
-* Swagger-UI: <host:port>/api/swagger
-* Open-API-Doc: <host:port>/v3/api-docs
+* Swagger-UI: [host:port]/api/swagger
+* Open-API-Doc: [host:port]/v3/api-docs
 
 **[ZURÜCK](README.md)**

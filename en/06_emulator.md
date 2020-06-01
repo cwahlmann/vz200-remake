@@ -1,9 +1,9 @@
-**[ZURÜCK](README.md)**
-# <a name="emulator">Der VZ200 Emulator</a>
+**[BACK](README.md)**
+# <a name="emulator">The VZ200 Emulator</a>
 
-Der genutzte Emulator ist eine angepasste Version des Java-Emulators 'jemu': http://jemu.winape.net/
+This Emulator is an adapted Variant of the Java-Emulator 'jemu': http://jemu.winape.net/
 
-## Port Konfiguration
+## Port Configuration
 
 application.properties (Default 8080):
 
@@ -11,25 +11,50 @@ application.properties (Default 8080):
 server.port = 10101
 ```
 
-Reset-Taste: [ESC]
+Reset Key: [ESC]
 
-## Erweiterung laden / speichern von .vz:
+## Expansion to get network info
+
+```basic
+OUT 250,0:FOR I=1 to 4:PRINT INP(250);:NEXT
+192 168 1 100
+READY
+```
+
+PORT | IN / OUT | Description
+-----|----------|-------------
+250  | IN       | READ part of IP-Adress at [index] and increment [index]
+250  | OUT      | SET [index] to [n] (0-3)
+
+## Expansion for audio
+
+```basic
+OUT 251,0:REM SOUND OFF
+READY
+OUT 251,INP(251)+50:REM DO IT LOUDER
+READY
+```
+
+PORT | IN / OUT | Description
+-----|----------|-------------
+251  | IN       | READ sound volume
+251  | OUT      | SET sound volume to [n]
+
+## Expansion to load and save .vz files:
 
 ```basic
 OUT 252,1
 READY
 ```
 
-PORT | IN / OUT | Beschreibung
+PORT | IN / OUT | Description
 -----|----------|-------------
 252  | OUT      | LOAD .vz program no. [n]
 253  | OUT      | SAVE .vz program no. [n]
 
-Alle Programme n <= 100 sind readonly.
+All programs with n <= 100 are readonly and have be stored in [home]/vz200/vz.
 
-(werden in [home]/vz200/vz abgelegt)
-
-## Erweiterung Tape-Controle
+## Expansion Tape Control
 
 ```basic
 PRINT INP(254)
@@ -37,53 +62,19 @@ PRINT INP(254)
 READY
 ```
 
-PORT | IN / OUT | Beschreibung
+PORT | IN / OUT | Description
 -----|----------|-------------
 254  | OUT      | 0: STOP, 1: PLAY, 16: RECORD
 255  | OUT      | REWIND to position [n]
 254, 255  | IN  | get LSB / MSB of tape position
 
-(werden in [home]/vz200/tape abgelegt)
+(Stored in [home]/vz200/tape)
 
-## Erweiterung Volume-Controle
+## REST Interface
 
-PORT | IN / OUT | Beschreibung
--------|-------|-------------
-251 | R/W | liest / setzt die Lautstärke (0-255)
+Information about the provided methods is available online at:
 
-## REST-Interface
+* Swagger-UI: [host:port]/api/swagger
+* Open-API-Doc: [host:port]/v3/api-docs
 
-```bash
-curl -X POST http://localhost:8080/vz200/vz 
-     -H "Content-Type:application/octet-stream" 
-     --data-binary @/D/Downloads/8bit/vz200/jvz_021/vz_files/games_autostart/CRASH.vz
-```
-Basis-Pfad: [HOST]:[PORT]/vz200
-
-Endpunkt | Method | Request | Response | Beschreibung
----------|--------|---------|----------|-------------
-/        | GET    |         | String   | Info
-/reset   | POST   |         | String   | Reset Computer
-/vz      | POST   | application/octet-stream | String | .vz-Programm einspielen
-/vz[?autorun={True/False}][&range={start-end}]      | GET    |         | application/octet-stream | .vz-Programm auslesen; autorun: mit Autostart-Flag speichern; range: Speicherbereich (default: Basic-Pointer)
-/bas     | POST   | application/octet-stream | String | Basic-Programm-Source einspielen
-/bas     | GET   |          | application/octet-stream | Basic-Programm-Source auslesen. 
-/asm[?autorun={True/False}]     | POST   | application/octet-stream | Range: {von-bis} | Assembler-Programm-Source einspielen und ggf. starten (default True)
-/asmzip[?autorun={True/False}]     | POST   | application/octet-stream | Range: {von-bis} | Zip-Datei mit Assembler-Programm-Source einspielen und ggf. starten (default True)
-/asm/{von[-bis]} | GET    | | String | Speicherbereich als Maschinenprogramm auslesen
-/hex     | POST   | application/octet-stream | String | Hexadezimalen Source einspielen und starten
-/hex/{von[-bis]} | GET    | | String | Speicherbereich in hexadezimalem Format auslesen
-/printer/flush | GET | | String | zuletzt gedruckte Zeilen auslesen
-/tape    | GET    |         | String | Namen des eingelegten Tapes lesen
-/tape/{name} | POST    |        | String | Type mit angegebenem Namen einlegen
-/tape/slot | GET    |         | Integer | aktuellen Slot des Tapes lesen
-/tape/slot/{id} | GET    | Integer | | Tape zu angegebenem Slot spulen
-/tape/play | POST | | Integer | Tape starten; gibt Slot zurück
-/tape/record | POST | | Integer | Aufnahme starten; gibt Slot zurück
-/tape/stop | POST | | Integer | Tape stoppen; gibt Slot zurück
-/typetext | POST | text/plain | String | Tippt Text in den Bildschirm des VZ (in Arbeit)
-/sound/{volume} | POST | Integer | String | Audio-Lautstärke schreiben von 0 bis 255
-/sound     | GET  | | Integer | Audio-Lautstärke lesen
-/registers | GET  | | String | gibt den den Wert aller Z80-Register als JSON zurück
-
-**[ZURÜCK](README.md)**
+**[BACK](README.md)**

@@ -11,11 +11,11 @@ A replica of the VZ200 Color Computer (Vtech / Dick Smith 1983)
 
 **[@ Assembly of the VZ200](03_assembly_vz200.md)**
 
-**[@ Zusammenbau des Monitors mit TFT-Display, Raspberry-Pi und Lautsprecher](04_assembly_monitor.md)**
+**[@ Assembly of the Monitor with TFT Display, Raspberry-Pi and Speaker](04_assembly_monitor.md)**
 
-**[@ Installation des Raspberry Pi](05_installation.md)**
+**[@ Installation of the Raspberry Pi](05_installation.md)**
 
-**[@ Der VZ200 Emulator](06_emulator.md)**
+**[@ The VZ200 Emulator](06_emulator.md)**
 
 **[@ VZ200 Companion App](apps/README.md)**
 
@@ -26,6 +26,7 @@ A replica of the VZ200 Color Computer (Vtech / Dick Smith 1983)
 ## Resources and downloads
 
 Hardware
+* [STL files on Thingiverse](https://www.thingiverse.com/thing:4415555)
 * [3d-Model VZ200](../resources/3d-model/vz200.f3d)
 * [3d-Model Monitor](../resources/3d-model/Monitor_5-Zoll.f3d) 
 * [Gerber-files for the keyboard circuit board](../resources/gerber/vz200-keyboard-layout.zip)

@@ -26,6 +26,7 @@ Ein Nachbau des VZ200 Color Computers (Vtech / Dick Smith 1983)
 ## Resourcen und Downloads
 
 Hardware
+* [STL files auf Thingiverse](https://www.thingiverse.com/thing:4415555)
 * [3d-Modell VZ200](resources/3d-model/vz200.f3d)
 * [3d-Modell Monitor](resources/3d-model/Monitor_5-Zoll.f3d) 
 * [Gerber-Dateien für die Tastaturplatine](resources/gerber/vz200-keyboard-layout.zip)
@@ -33,7 +34,7 @@ Hardware
 * [Grafiken für das Logo](resources/aufkleber/logo_7x70perc_A4.png)
 
 Software
-* [JemuVZ200 Emulator V2.1](resources/releases/JemuVZ200-2.1.zip)
+* [JemuVZ200 Emulator V2.2](resources/releases/JemuVZ200-2.2.zip)
 * VZ200 Companion App (TODO)
 
 Dokumentation und Beispiele
