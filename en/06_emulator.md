@@ -13,6 +13,33 @@ server.port = 10101
 
 Reset Key: [ESC]
 
+## Expansion to get network info
+
+```basic
+OUT 250,0:FOR I=1 to 4:PRINT INP(250);:NEXT
+192 168 1 100
+READY
+```
+
+PORT | IN / OUT | Description
+-----|----------|-------------
+250  | IN       | READ part of IP-Adress at [index] and increment [index]
+250  | OUT      | SET [index] to [n] (0-3)
+
+## Expansion for audio
+
+```basic
+OUT 251,0:REM SOUND OFF
+READY
+OUT 251,INP(251)+50:REM DO IT LOUDER
+READY
+```
+
+PORT | IN / OUT | Description
+-----|----------|-------------
+251  | IN       | READ sound volume
+251  | OUT      | SET sound volume to [n]
+
 ## Expansion to load and save .vz files:
 
 ```basic
@@ -43,45 +70,11 @@ PORT | IN / OUT | Description
 
 (Stored in [home]/vz200/tape)
 
-## Expansion Volume Control
-
-PORT | IN / OUT | Description
--------|-------|-------------
-251 | R/W | reads / sets the volume between 0 and 255
-
 ## REST Interface
 
-```bash
-curl -X POST http://localhost:8080/vz200/vz 
-     -H "Content-Type:application/octet-stream" 
-     --data-binary @/D/Downloads/8bit/vz200/jvz_021/vz_files/games_autostart/CRASH.vz
-```
-Basic Path: [HOST]:[PORT]/vz200
+Information about the provided methods is available online at:
 
-Endpoint | Method | Request | Response | Description
----------|--------|---------|----------|-------------
-/        | GET    |         | String   | Info
-/reset   | POST   |         | String   | Reset Computer
-/vz      | POST   | application/octet-stream | String | load .vz-Programm
-/vz[?autorun={True/False}][&range={start-end}]      | GET    |         | application/octet-stream | read .vz-Programm from Emulator; autorun: Save locally with Autostart Flag; range: RAM area (default: Basic-Pointer)
-/bas     | POST   | application/octet-stream | String | Load Basic Program from Source
-/bas     | GET   |          | application/octet-stream | Read Basic Program Source 
-/asm[?autorun={True/False}]     | POST   | application/octet-stream | Range: {from-to} | Load Assembler Programm Source and optionally run it (default True)
-/asmzip[?autorun={True/False}]     | POST   | application/octet-stream | Range: {from-to} | Load Zip file with Assembler Programm Source and run it optionally (default True)
-/asm/{from[-to]} | GET    | | String | Read Memory Area as Assembler Code
-/hex     | POST   | application/octet-stream | String | Load Hexadecimal Source and launch it
-/hex/{from[-to]} | GET    | | String | Read Memory Area as in hexadecimal format
-/printer/flush | GET | | String | Read most recent printed lines
-/tape    | GET    |         | String | Read the name of the Tape inserted
-/tape/{name} | POST    |        | String | Insert Tape with the given name
-/tape/slot | GET    |         | Integer | Read the current slot of the Tape
-/tape/slot/{id} | GET    | Integer | | Forward wind the Tape to the slot specified. 
-/tape/play | POST | | Integer | Start Tape, returns slot
-/tape/record | POST | | Integer | Start Recording, returns slot
-/tape/stop | POST | | Integer | Stop Tape, returns slot
-/typetext | POST | text/plain | String | Enters Text into the Basic PROMT of the VZ (work in progress) 
-/sound/{volume} | POST | Integer | String | Set Audio Volume from 0 to 255
-/sound     | GET  | | Integer | Read Audio Volume
-/registers | GET  | | String | Returns the content of every Z80 register as JSON
+* Swagger-UI: [host:port]/api/swagger
+* Open-API-Doc: [host:port]/v3/api-docs
 
 **[BACK](README.md)**

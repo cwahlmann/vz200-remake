@@ -13,6 +13,33 @@ server.port = 10101
 
 Reset-Taste: [ESC]
 
+## Erweiterung Netzwerk-Info
+
+```basic
+OUT 250,0:FOR I=1 to 4:PRINT INP(250);:NEXT
+192 168 1 100
+READY
+```
+
+PORT | IN / OUT | Beschreibung
+-----|----------|-------------
+250  | IN       | READ part of IP-Adress at [index] and increment [index]
+250  | OUT      | SET [index] to [n] (0-3)
+
+## Erweiterung Audio Device
+
+```basic
+OUT 251,0:REM SOUND OFF
+READY
+OUT 251,INP(251)+50:REM DO IT LOUDER
+READY
+```
+
+PORT | IN / OUT | Beschreibung
+-----|----------|-------------
+251  | IN       | READ sound volume
+251  | OUT      | SET sound volume to [n]
+
 ## Erweiterung laden / speichern von .vz:
 
 ```basic
@@ -45,45 +72,11 @@ PORT | IN / OUT | Beschreibung
 
 (werden in [home]/vz200/tape abgelegt)
 
-## Erweiterung Volume-Controle
-
-PORT | IN / OUT | Beschreibung
--------|-------|-------------
-251 | R/W | liest / setzt die Lautstärke (0-255)
-
 ## REST-Interface
 
-```bash
-curl -X POST http://localhost:8080/vz200/vz 
-     -H "Content-Type:application/octet-stream" 
-     --data-binary @/D/Downloads/8bit/vz200/jvz_021/vz_files/games_autostart/CRASH.vz
-```
-Basis-Pfad: [HOST]:[PORT]/vz200
+Informationen zu den einzelnen Methoden können online abgerufen werden:
 
-Endpunkt | Method | Request | Response | Beschreibung
----------|--------|---------|----------|-------------
-/        | GET    |         | String   | Info
-/reset   | POST   |         | String   | Reset Computer
-/vz      | POST   | application/octet-stream | String | .vz-Programm einspielen
-/vz[?autorun={True/False}][&range={start-end}]      | GET    |         | application/octet-stream | .vz-Programm auslesen; autorun: mit Autostart-Flag speichern; range: Speicherbereich (default: Basic-Pointer)
-/bas     | POST   | application/octet-stream | String | Basic-Programm-Source einspielen
-/bas     | GET   |          | application/octet-stream | Basic-Programm-Source auslesen. 
-/asm[?autorun={True/False}]     | POST   | application/octet-stream | Range: {von-bis} | Assembler-Programm-Source einspielen und ggf. starten (default True)
-/asmzip[?autorun={True/False}]     | POST   | application/octet-stream | Range: {von-bis} | Zip-Datei mit Assembler-Programm-Source einspielen und ggf. starten (default True)
-/asm/{von[-bis]} | GET    | | String | Speicherbereich als Maschinenprogramm auslesen
-/hex     | POST   | application/octet-stream | String | Hexadezimalen Source einspielen und starten
-/hex/{von[-bis]} | GET    | | String | Speicherbereich in hexadezimalem Format auslesen
-/printer/flush | GET | | String | zuletzt gedruckte Zeilen auslesen
-/tape    | GET    |         | String | Namen des eingelegten Tapes lesen
-/tape/{name} | POST    |        | String | Type mit angegebenem Namen einlegen
-/tape/slot | GET    |         | Integer | aktuellen Slot des Tapes lesen
-/tape/slot/{id} | GET    | Integer | | Tape zu angegebenem Slot spulen
-/tape/play | POST | | Integer | Tape starten; gibt Slot zurück
-/tape/record | POST | | Integer | Aufnahme starten; gibt Slot zurück
-/tape/stop | POST | | Integer | Tape stoppen; gibt Slot zurück
-/typetext | POST | text/plain | String | Tippt Text in den Bildschirm des VZ (in Arbeit)
-/sound/{volume} | POST | Integer | String | Audio-Lautstärke schreiben von 0 bis 255
-/sound     | GET  | | Integer | Audio-Lautstärke lesen
-/registers | GET  | | String | gibt den den Wert aller Z80-Register als JSON zurück
+* Swagger-UI: [host:port]/api/swagger
+* Open-API-Doc: [host:port]/v3/api-docs
 
 **[ZURÜCK](README.md)**
