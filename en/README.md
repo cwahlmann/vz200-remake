@@ -47,6 +47,8 @@ Documentation and examples
 All Sources are hosted at
 * [github.com/cwahlmann/vz200](https://github.com/cwahlmann/vz200)
 
+[![VZ200 Presentation Makerfaire](../images/vz200-remake-presentation-youtube.png)](https://www.youtube.com/watch?v=7TxQ1y71ufA)
+
 ![Screenshot_02](../images/screenshot_02.png "Basic Programming")
 ![Screenshot_03](../images/screenshot_03.png "Charset")
 ![Screenshot_05](../images/screenshot_05.png "the hunter - bit by a bat")
