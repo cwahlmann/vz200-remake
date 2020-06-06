@@ -47,10 +47,6 @@ Dokumentation und Beispiele
 Alle Sourcen sind zu finden unter
 * [github.com/cwahlmann/vz200](https://github.com/cwahlmann/vz200)
 
-<div style="position: relative; padding-bottom: 56.25%; padding-top: 25px; height: 0;">
-    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/7TxQ1y71ufA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"> </iframe>
-</div>
-
 [![VZ200 Presentation Makerfaire](images/vz200-remake-presentation-youtube.png)](https://www.youtube.com/watch?v=7TxQ1y71ufA)
 
 ![Screenshot_02](images/screenshot_02.png "Basic Programming")
