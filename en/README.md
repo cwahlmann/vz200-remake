@@ -34,7 +34,7 @@ Hardware
 * [graphics for the logo](../resources/aufkleber/logo_7x70perc_A4.png)
 
 Software
-* [JemuVZ200 Emulator V2.2](../resources/releases/JemuVZ200-2.2.zip)
+* [JemuVZ200 Emulator V2.3](../resources/releases/JemuVZ200-2.3.zip)
 * VZ200 Companion App (TODO)
 
 Documentation and examples
