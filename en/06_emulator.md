@@ -79,18 +79,20 @@ Information about the provided methods is available online at:
 
 ## Australian Graphics Mod
 
-PORT | IN / OUT | Description
------|----------|----------------------------------------------------
-32   | OUT      | set graphic-mode und Gfx-RAM-Page
-     |          | ---MMMPP (MMM = mode 0-7, PP = gfx-RAM-page 0-3)
-     |          | mode 0: 64x64, 4 colors
-     |          | mode 1: 128x64, monochrome
-     |          | mode 2: 128x64, 4 colors (default)
-     |          | mode 3: 128x96, monochrome
-     |          | mode 4: 128x96, 4 colors
-     |          | mode 5: 128x192, monochrome
-     |          | mode 6: 128x192, 4 colors
-     |          | mode 7: 256x192, monochrome
+PORT | IN / OUT | Description                       | FORMAT    
+-----|----------|-----------------------------------|--------------------------------------------------
+32   | OUT      | set graphic-mode und Gfx-RAM-Page | ---MMMPP (MMM = mode 0-7, PP = gfx-RAM-page 0-3)
+
+| MODE  | Description
+|-------|--------------------------------
+| 0     | 64x64, 4 colors
+| 1     | 128x64, monochrome
+| 2     | 128x64, 4 colors (default)
+| 3     | 128x96, monochrome
+| 4     | 128x96, 4 colors
+| 5     | 128x192, monochrome
+| 6     | 128x192, 4 colors
+| 7     | 256x192, monochrome
 
 Der Mod kann über die Konfigurationsdatei ~/.jemu deaktiviert / aktiviert (default) werden.
 
