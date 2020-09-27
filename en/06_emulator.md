@@ -77,4 +77,23 @@ Information about the provided methods is available online at:
 * Swagger-UI: [host:port]/api/swagger
 * Open-API-Doc: [host:port]/v3/api-docs
 
+## Australian Graphics Mod
+
+PORT | IN / OUT | Description                       | FORMAT    
+-----|----------|-----------------------------------|--------------------------------------------------
+32   | OUT      | set graphic-mode und Gfx-RAM-Page | ---MMMPP (MMM = mode 0-7, PP = gfx-RAM-page 0-3)
+
+| MODE  | Description
+|-------|--------------------------------
+| 0     | 64x64, 4 colors
+| 1     | 128x64, monochrome
+| 2     | 128x64, 4 colors (default)
+| 3     | 128x96, monochrome
+| 4     | 128x96, 4 colors
+| 5     | 128x192, monochrome
+| 6     | 128x192, 4 colors
+| 7     | 256x192, monochrome
+
+Der Mod kann über die Konfigurationsdatei ~/.jemu deaktiviert / aktiviert (default) werden.
+
 **[BACK](README.md)**
