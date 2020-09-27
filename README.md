@@ -34,7 +34,7 @@ Hardware
 * [Grafiken für das Logo](resources/aufkleber/logo_7x70perc_A4.png)
 
 Software
-* [JemuVZ200 Emulator V2.3](resources/releases/JemuVZ200-2.3.zip)
+* [JemuVZ200 Emulator V2.4 - NEW australian gfx mod, fix issue with vz loader](resources/releases/JemuVZ200-2.4.zip)
 * VZ200 Companion App (TODO)
 
 Dokumentation und Beispiele
