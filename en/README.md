@@ -27,8 +27,10 @@ A replica of the VZ200 Color Computer (Vtech / Dick Smith 1983)
 
 Hardware
 * [STL files on Thingiverse](https://www.thingiverse.com/thing:4415555)
-* [3d-Model VZ200](../resources/3d-model/vz200.f3d)
-* [3d-Model Monitor](../resources/3d-model/Monitor_5-Zoll.f3d) 
+* [3d-Model VZ200 (.f3d, Fusion 360)](../resources/3d-model/vz200.f3d)
+* [3d-Model VZ200 (.fbx, Blender-compatible)](../resources/3d-model/vz200.fbx)
+* [3d-Model Monitor (.f3d, Fusion 360)](../resources/3d-model/Monitor_5-Zoll.f3d) 
+* [3d-Model Monitor (.fbx, Blender-compatible)](../resources/3d-model/Monitor_5-Zoll.fbx) 
 * [Gerber-files for the keyboard circuit board](../resources/gerber/vz200-keyboard-layout.zip)
 * [graphics for the keyboard](../resources/aufkleber/Aufkleber-2x70perc.png)
 * [graphics for the logo](../resources/aufkleber/logo_7x70perc_A4.png)

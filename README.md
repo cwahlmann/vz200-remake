@@ -27,8 +27,10 @@ Ein Nachbau des VZ200 Color Computers (Vtech / Dick Smith 1983)
 
 Hardware
 * [STL files auf Thingiverse](https://www.thingiverse.com/thing:4415555)
-* [3d-Modell VZ200](resources/3d-model/vz200.f3d)
-* [3d-Modell Monitor](resources/3d-model/Monitor_5-Zoll.f3d) 
+* [3d-Modell VZ200 (.f3d, Fusion 360)](resources/3d-model/vz200.f3d)
+* [3d-Modell VZ200 (.fbx, Blender-kompatibel)](resources/3d-model/vz200.fbx)
+* [3d-Modell Monitor (.f3d, Fusion 360)](resources/3d-model/Monitor_5-Zoll.f3d) 
+* [3d-Modell Monitor (.fbx, Blender-kompatibel)](resources/3d-model/Monitor_5-Zoll.fbx) 
 * [Gerber-Dateien für die Tastaturplatine](resources/gerber/vz200-keyboard-layout.zip)
 * [Grafiken für die Tastatur](resources/aufkleber/Aufkleber-2x70perc.png)
 * [Grafiken für das Logo](resources/aufkleber/logo_7x70perc_A4.png)
